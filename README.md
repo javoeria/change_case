@@ -2,6 +2,9 @@
 
 Transform a string between `camelCase`, `PascalCase`, `Capital Case`, `snake_case`, `kebab-case`, `CONSTANT_CASE` and others.
 
+[![Build Status](https://github.com/javoeria/change_case/actions/workflows/main.yml/badge.svg)](https://github.com/javoeria/change_case/actions/workflows/main.yml)
+[![Gem Version](https://badge.fury.io/rb/change_case.svg)](https://rubygems.org/gems/change_case)
+
 ## Installation
 
 Install the gem and add to the application's Gemfile by executing:
@@ -26,19 +29,20 @@ ChangeCase.camel("TEST_VALUE") # "testValue"
 
 Included case functions:
 
-| Method     | Result      |
-| ---------- | ----------- |
-| `camel`    | `twoWords`  |
-| `capital`  | `Two Words` |
-| `constant` | `TWO_WORDS` |
-| `dot`      | `two.words` |
-| `kebab`    | `two-words` |
-| `no`       | `two words` |
-| `pascal`   | `TwoWords`  |
-| `path`     | `two/words` |
-| `sentence` | `Two words` |
-| `snake`    | `two_words` |
-| `train`    | `Two-Words` |
+| Method         | Result      |
+| -------------- | ----------- |
+| `camel`        | `twoWords`  |
+| `capital`      | `Two Words` |
+| `constant`     | `TWO_WORDS` |
+| `dot`          | `two.words` |
+| `kebab`        | `two-words` |
+| `no`           | `two words` |
+| `pascal`       | `TwoWords`  |
+| `pascal_snake` | `Two_Words` |
+| `path`         | `two/words` |
+| `sentence`     | `Two words` |
+| `snake`        | `two_words` |
+| `train`        | `Two-Words` |
 
 ## Development
 
