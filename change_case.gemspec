@@ -12,4 +12,5 @@ Gem::Specification.new do |spec|
   spec.homepage = "https://github.com/javoeria/change_case"
   spec.license = "MIT"
   spec.files = Dir["lib/**/*.rb"]
+  spec.metadata["homepage_uri"] = spec.homepage
 end
