@@ -24,25 +24,30 @@ gem install change_case
 ```ruby
 require "change_case"
 
-ChangeCase.camel("TEST_VALUE") # "testValue"
+ChangeCase.camel("TEST_VALUE") #=> "testValue"
+# OR
+"TEST_VALUE".camelcase #=> "testValue"
 ```
 
-Included case functions:
+Included case methods:
 
-| Method         | Result      |
-| -------------- | ----------- |
-| `camel`        | `twoWords`  |
-| `capital`      | `Two Words` |
-| `constant`     | `TWO_WORDS` |
-| `dot`          | `two.words` |
-| `kebab`        | `two-words` |
-| `no`           | `two words` |
-| `pascal`       | `TwoWords`  |
-| `pascal_snake` | `Two_Words` |
-| `path`         | `two/words` |
-| `sentence`     | `Two words` |
-| `snake`        | `two_words` |
-| `train`        | `Two-Words` |
+| ChangeCase     | String         | Result      |
+| -------------- | -------------- | ----------- |
+| `camel`        | `camelcase`    | `twoWords`  |
+| `capital`      | `capitalcase`  | `Two Words` |
+| `constant`     | `constantcase` | `TWO_WORDS` |
+| `dot`          | `dotcase`      | `two.words` |
+| `kebab`        | `kebabcae`     | `two-words` |
+| `no`           | `nocase`       | `two words` |
+| `pascal`       | `pascalcase`   | `TwoWords`  |
+| `pascal_snake` | `pascalcase`   | `Two_Words` |
+| `path`         | `pathcase`     | `two/words` |
+| `sentence`     | `sentencecase` | `Two words` |
+| `snake`        | `snakecase`    | `two_words` |
+| `train`        | `traincase`    | `Two-Words` |
+| `title`        | `titlecase`    | `Two Words` |
+| `swap`         | `swapcase`     | `tWO wORDS` |
+| `sponge`       | `spongecase`   | `TwO wORdS` |
 
 ## Development
 
