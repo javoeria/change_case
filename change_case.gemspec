@@ -11,6 +11,9 @@ Gem::Specification.new do |spec|
   spec.summary = "Transform a string between camelCase, PascalCase, Capital Case, snake_case, kebab-case, CONSTANT_CASE and others."
   spec.homepage = "https://github.com/javoeria/change_case"
   spec.license = "MIT"
-  spec.files = Dir["lib/**/*.rb"]
+  # spec.required_ruby_version = ">= 3.1.0"
+
   spec.metadata["homepage_uri"] = spec.homepage
+  spec.files = Dir["lib/**/*.rb"] + Dir["*.md"]
+  spec.require_paths = ["lib"]
 end
